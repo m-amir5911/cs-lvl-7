@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform(rotate)</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 2s ease-in;margin-bottom: 5px;
+        }
+        #box1{
+            background-color: tan;
+            border: 2px solid black;
+        }
+            #box1:hover{
+                transform: rotate(45deg);
+            }
+        #box2{
+            background-color: darkorange;
+            border: 2px solid black;
+        }
+            #box2:hover{
+                transform: rotatez(99deg);
+            }
+        #box3{
+            background-color: firebrick;
+            border: 2px solid black;
+        }
+            #box3:hover{
+                transform: rotatex(140deg);
+            }
+        #box4{
+            background-color: gray;
+            border: 2px solid black;
+        }
+            #box4:hover{
+                transform: rotatey(180deg);
+            }
+            
+        
+    </style>
+</head>
+<body>
+    <h1>css transform(rotate)</h1>
+    <div id="box1" class="box">rotate</div>
+    <div id="box2" class="box">rotatez</div>
+    <div id="box3" class="box">rotatex</div>
+    <div id="box4" class="box">rotatey</div>
+</body>
+</html>

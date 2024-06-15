@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform(skew)</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 2s ease-in;margin-bottom: 5px;
+        }
+        #box1{
+            background-color: tan;
+            border: 2px solid black;
+        }
+            #box1:hover{
+                transform: skew(-50deg);
+            }
+        #box2{
+            background-color: darkorange;
+            border: 2px solid black;
+        }
+            #box2:hover{
+                transform: skewz(150deg);
+            }
+        #box3{
+            background-color: firebrick;
+            border: 2px solid black;
+        }
+            #box3:hover{
+                transform: skewx(45deg);
+            }
+        #box4{
+            background-color: gray;
+            border: 2px solid black;
+        }
+            #box4:hover{
+                transform: skewy(170deg);
+            }
+    </style>
+</head>
+<body>
+    <h1>css transform(skew)</h1>
+    <div id="box1" class="box">skew</div>
+    <div id="box2" class="box">skewz</div>
+    <div id="box3" class="box">skewx</div>
+    <div id="box4" class="box">skewy</div>
+</body>
+</html>
